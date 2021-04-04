@@ -1,0 +1,5 @@
+FROM apache/airflow:2.0.0
+
+COPY requirements.txt requirements.txt
+COPY ./airflow-data/airflow.cfg ./opt/airlfow/airflow.cfg
+RUN pip install -r requirements.txt
